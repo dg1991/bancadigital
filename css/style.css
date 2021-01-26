@@ -1,0 +1,111 @@
+:root {
+    --color-primary: #6209db;
+    --dark: #000000;
+    --ligh: #ffffff;
+    --grey: #f5f5f5;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    min-height: 90px;
+}
+
+.navbar .btn {
+    padding: .625rem 1.25rem;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: #8e42f7;
+}
+
+.btn-light:hover {
+    background-color: #c7c7c7;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-light {
+    background-color: var(--grey) !important;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.section-size {
+    height: 900px;
+}
+
+.navbar-toogler:focus {
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.step::after {
+    content: "";
+    border-right: 1px solid #555555;
+    height: 60px;
+    position: absolute;
+    top: 34px;
+    opacity: .2;
+}
+
+ul li .text-primary:hover {
+    color: #8e42f7 !important;
+    cursor: pointer;
+}
+
+.call-to-action {
+    border-radius: 50px;
+}
+.call-to-action img {
+    max-width: 280px;
+}
+
+footer {
+    border-top: 1px solid var(--grey);
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 992px){
+    .navbar {
+        position: relative !important;
+    }
+    .section-size {
+        height: unset;
+    }
+    .call-to-action img {
+        max-width: 80%;
+        display: block;
+        margin: auto;
+    }
+}
